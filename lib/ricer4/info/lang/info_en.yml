@@ -1,0 +1,18 @@
+en:
+  ricer4:
+    plugins:
+      info:
+
+        botip:
+          trigger: "botip"
+          description: "Shows the IP address of the box $BOT is running on."        
+        
+        perf:
+          trigger: "perf"
+          description: "Show performance statistics of the $BOT$ bot."
+          msg_performance: 'Memory: %{memory} (%{max_memory} max). DB: %{queries} queries took %{db_time} of %{uptime}, %{qps} queries per second. Threads: %{threads} (%{max_threads} max). PID: %{pid}. CPU usage: %{cpu}. DB Pool %{pool_now}/%{pool_max}(%{pool_peak} max).'
+
+        version:
+          trigger: "version"
+          description: "Shows version info of $BOT$."
+          msg_version: "%{owner} is running $BOT$; ricer4-%{build} from %{date}. Host System is %{os} with ruby %{ruby}. System time is %{time}."
